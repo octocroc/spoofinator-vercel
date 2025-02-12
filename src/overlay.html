@@ -1,0 +1,18 @@
+<div style="
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0; 
+  background: rgba(0, 0, 0, 0.7); color: white; display: flex; 
+  justify-content: center; align-items: center; z-index: 1000;
+">
+  <div style="text-align: center; background: #333; padding: 20px; border-radius: 10px;">
+    <h2 style="color: white;">Join the cause...</h2>
+    <p style="margin-bottom: 20px;">We have contributed countless hours to saving lives through chairty and just ask a minute of your time</p>
+    <button id="close-overlay" style="padding: 10px 20px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;" onclick="window.location.href='warn';">
+      Donate Now
+    </button>
+  </div>
+</div>
+<script>
+  document.getElementById('close-overlay').addEventListener('click', function() {
+    document.querySelector('div[style*="position: fixed"]').remove();
+  });
+</script>
