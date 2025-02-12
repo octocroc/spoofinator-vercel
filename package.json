@@ -1,18 +1,20 @@
 {
-  "name": "spoofinator",
+  "name": "spoofinator-vercel",
   "version": "1.0.0",
-  "main": "api/proxy.ts",
   "scripts": {
-    "dev": "ts-node src/server.ts",
-    "build": "tsc"
+    "dev": "vercel dev",
+    "build": "tsc",
+    "start": "vercel start"
   },
   "dependencies": {
-    "axios": "^0.27.2",
-    "fastify": "^3.0.0"
+    "axios": "^0.21.1",
+    "fastify": "^3.22.0",
+    "@vercel/node": "^1.11.0",
+    "typescript": "^4.4.2"
   },
   "devDependencies": {
-    "typescript": "^4.5.5",
-    "@types/node": "^16.11.7",
-    "@vercel/node": "^1.11.0"
+    "@types/node": "^16.0.0",
+    "@types/fastify": "^3.0.0",
+    "@types/axios": "^0.14.0"
   }
 }
